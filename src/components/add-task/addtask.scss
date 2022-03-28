@@ -1,0 +1,54 @@
+@import "../../scss/variables";
+
+.add-task-bar{
+  display: none;
+  padding: 2rem;
+}
+
+  label {
+    display: block;
+    text-align: left;
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+  }
+  input {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .saveButton {
+
+    margin: 1rem 0;
+    color: $borderColor;
+    margin: 1rem 0;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid $borderColor;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    z-index: 0;
+
+    &:after {
+      content: "";
+      background-color: $textColor;
+      width: 100%;
+      z-index: -1;
+      position: absolute;
+      height: 100%;
+      top: 7px;
+      left: 7px;
+      transition: 0.2s;
+      opacity: 0.5;
+    }
+    &:hover:after{
+        top: 0;
+        left: 0;
+    }
+  }

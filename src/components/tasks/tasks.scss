@@ -1,0 +1,20 @@
+@import "../../scss/variables";
+
+.tasks-container{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    .task-container{
+        border: 2px solid $textColor;
+        text-align: start;
+        margin-bottom: 1rem;
+        padding: 0.5rem 1rem;
+        display: flex;
+        .task{
+            width: 95%;
+        }
+        .button{
+            width: 5%;
+        }
+    }
+}
